@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<style type="text/css">
+		body{
+			background-color: #00FFFF;
+		}
+		.bungkus{
+			width: 800px;
+			margin: auto;
+		}
+		.gallery{
+			float: left;
+			margin: 20px;
+			width: 150px;
+			text-align: center;
+			font-family: Times New Roman;
+			font-size: 12px;
+			border: 1px solid grey;
+		}
+		img{
+			width: 170px;
+			height: 150px;
+		}
+		#container{
+			width: 900px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			height: auto;
+			margin: auto;
+		}
+		#nav ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #000;
+		}
+		#nav li{
+			float: left;
+		}
+		#nav li a{
+			display: inline-block;
+    		color: #fff;
+    		text-align: center;
+    		padding: 17px 15px;
+    		text-decoration: none;
+		}
+		#nav li a:hover{
+			background-color: #7FFFD4;
+		}
+		.Waktu {
+    		align-items: right;
+    	}
+		#header{
+			height: 300px;
+			background-color: grey;
+			background-image: url("bg upin.webp");
+			background-size: 100% 100%;
+			padding-bottom: 30px;
+		}
+		#content{
+			height: 470px;
+			width:100%;
+			background-color: grey;
+			float: left;
+		}
+		#footer{
+			height: 70px;
+			background-color: #000;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="nav">
+		 <ul>
+			<li><a href="index.html">Home</a></li> 
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		</div>
+		<div id="content">
+			<script>
+			var waktu = new Date();
+			var jam = waktu.getHours();
+			var tgl = waktu.getDate();
+			var bln = waktu.getMonth();
+			var thn = waktu.getFullYear();
+			var hr = waktu.getDay();
+
+			var bulan = ["jan","Feb","Mret","Apr","Mei","jun","jul","Agst","Sep","Okt","Nov","Desember"];
+			var hari = ["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
+			// bulan(11);
+
+			if (jam<=10) {
+			document.write("Hai Selamat Pagi"+"<br>");
+		  } else if (jam<=14) {
+			document.write("Hai Selamat Siang"+"<br>");
+		  } else if (jam<=17) {
+			document.write("Hai Selamat Sore"+"<br>");
+		  } else {
+			document.write("Hai Selamat Malam"+"<br>")
+		  }
+
+			document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+"<br>");
+	     </script>
+		<div class="bungkus">
+		<div class="gallery">
+	  		<img src="upin bermain.jpg">
+			<b>Ket Gambar 1</b>
+	   </div>
+		<div class="gallery">
+			<img src="Upin buka puasa.jpg">
+			<b>Ket Gambar 2</b>
+	  </div>
+		<div class="gallery">
+			<img src="uppin berkebun.jpg">
+		 	<b>Ket Gambar 3</b>
+	 </div>
+		<div class="gallery">
+			<img src="upin mancing.jpg">
+			<b>Ket Gambar 4</b>
+	 </div>
+		<div class="gallery">
+			<img src="upin masak.jpg">
+		  	<b>Ket Gambar 5</b>
+	 </div>
+		<div class="gallery">
+			<img src="upin ngaji.jpg">
+		 	<b>Ket Gambar 6</b>
+	 </div>
+	   	<div class="gallery">
+			<img src="upin sekolah.jpeg">
+		  	<b>Ket Gambar 7</b>
+	 </div>
+	 	<div class="gallery">
+			<img src="upin tokdalang.jpg">
+		  	<b>Ket Gambar 8</b>
+	 </div>
+		</div>
+		<div id="sidebar"></div>
+		<div id="footer">
+			<p>&copy; CopyRight 2023 - Yeyen Nurfatimah - 231011701260 - 01SIFP009</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
