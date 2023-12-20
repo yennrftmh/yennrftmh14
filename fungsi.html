@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fungsi Date</title>
+</head>
+<body>
+	<script>
+		var waktu = new Date();
+		var jam = waktu.getHours();
+		var tgl = waktu.getDate();
+		var bln = waktu.getMonth();
+		var thn = waktu.getFullYear();
+		var hr = waktu.getDay();
+
+		var bulan = ["jan","Feb","Mret","Apr","Mei","jun","jul","Agst","Sep","Okt","Nov","Desember"];
+		var hari = ["Minggu","Senin","Selasa","Rabu"];
+		// bulan(11);
+
+		document.write("Waktu sekarang "+waktu+"<br>");
+		document.write("Jam sekarang "+jam+"<br>");
+		document.write("Tanggal sekarang "+tgl+"<br>");
+		document.write("Bulan sekarang "+bln+"<br>");
+		document.write("Tahun sekarang "+thn+"<br>");
+		document.write("Nama Bulan sekarang "+bulan[bln]+"<br>");
+		document.write("Nama hari sekarang "+hari[hr]+"<br>");
+		document.write("Tahun sekarang "+thn+"<br>");
+
+		document.write(tgl+"/"+(bln+1)+"/"+thn+"<br>");
+		document.write(hari[hr]+"/"+tgl+"/"+bulan[bln]+"/"+thn+"<br>");
+
+		if (jam<=10) {
+			document.write("Haii Selamat Pagi Jangan Lupa Sarapan yaa");
+		} else if (jam<=14) {
+			document.write("Haii Selamat Siang Jangan Lupa Makan ya..");
+		} else if (jam<=17) {
+			document.write("Haii Selamat Sore Gimana Kegiatan Hari Ini hehe..");
+		} else {
+			document.write("Selamat Malam Jangan Lupa Istirahat ya ;)")
+		}
+	</script>
+</body>
+</html>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rjfDdjgXeP0?si=lPKJf-Cavq7TXH7W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

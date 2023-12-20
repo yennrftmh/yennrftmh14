@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+	<title>Desain Form</title>
+	<style type="text/css">
+		.wrapper{
+			width: 500px;
+		}
+		input,[type=text]textarea,select{
+			width: 100%
+			background-color: yellow;
+			padding: 10px 15px;
+			color: maroon;
+			border-radius: 5px;
+			border: none;
+			box-sizing: border-box;
+		}
+		input[type=radio]{
+			
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<from>
+		Nama <input type="text" name="nama" placeholder="Masukan Nama Anda">
+		Alamat <textarea name="alamat"></textarea>
+		Kota <select>
+			<option>--Pilih Kota--</option>
+			<option>Pandeglang</option>
+			<option>Serang</option>
+			<option>Rangkasbitung</option>
+			<option>Tangerang</option>
+			<option>Jakarta</option>
+		</select>
+		Jenis Kelamin <input type="radio" name="gender">Laki-Laki
+					  <input type="radio" name="gender">Perempuan
+	</from>
+</div>
+</body>
+</html>

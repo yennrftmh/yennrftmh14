@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: green;
+		}
+		#container{
+			width:900px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			height: auto;
+			margin: auto;
+		}
+		#header{
+			height: 300px;
+			background-image: url("download.png");
+			background-size: 100% 100%;
+			padding-bottom: 30px;
+		}
+		#content{
+			height: 650px;
+			width: 100%;
+			background-color:  burlywood;
+			float: left;
+		}
+		#content p{
+			font-size: 17px;
+			text-align: justify;
+			padding: 4px 12px 4px 2px;
+		}
+		#content img{
+			float: left;
+			margin-right: 20px;
+			margin-left: 15px;
+			margin-top: 20px;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		#content .download.png{
+			float: left;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		#footer{
+			height: 90px;
+			background-color: #000;
+			font-size: 25px;
+			clear: both;
+			padding-top: 30px;
+		}
+		#nav{
+			height: 80px;
+			background-color: #E9967A;
+			font-size: 19px;
+			padding-top: 20px;
+		}
+		#nav a{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="nav">
+			<a href="indexmawar.html">Home |</a>
+			<a href="gallerymawar.html">Gallery |</a>
+			<a href="sejarahmawar.html">About Us |</a>
+			<a href="contacmawar.html">Contact Us |</a>
+
+		<script>
+		var waktu = new Date();
+		var jam = waktu.getHours();
+		var tgl = waktu.getDate();
+		var bln = waktu.getMonth();
+		var thn = waktu.getFullyear();
+		var hr = waktu.getDay();
+
+		var bulan = ["jan","feb","mret","apr","mei","jun","jul","agst","sept","okt","nov","des"];
+		var hari = ["minggu", "senin", "selasa","rabu"]
+
+		if (jam<=10){
+			document.write("hai selamat pagi");
+		}else if (jam<=14){
+			document.write("ha selamat siang");
+		}else if (jam<=17){
+			document.write("hai selamat sore");
+		}else{
+			document.write("hai selamat malam");
+		}
+		document.write(hari[hr]+","+tgl" "+bulan[bln]+" "+thn+"<br>");
+	</script>
+		</div>
+		<div id="content">
+			<img src="download.jpeg">
+			<h2><b> SENI TARI TRADISINONAL</b></h2><hr>
+			<p><b> Tari Jaipong</b> Indonesia memang mempunyai banyak sekali jenis tarian tradisional. Semuanya itu tersebar ke seluruh penjuru Indonesia. Mulai dari Sabang hingga Merauke mempunyai tarian tradisionalnya masing-masing. Salah satu tarian tradisional di Indonesia ini yaitu Tari Jaipong. Tarian ini, merupakan jenis tarian yang berasal dari Jawa Barat. Awalnya, tarian jaipong ini berkembang di daerah Bandung, dan Karawang.Tarian Jaipong adalah tarian gabungan dari sejumlah kesenian tradisional, misalnya pencak silat, ketuk tilu, dan wayang golek. Dari situlah tarian ini populer sebagai tarian yang memiliki gerakan-gerakan yang unik, energik, dan sederhana.
+			<p><b></b> Tak hanya energik saja, tarian jaipong juga dimainkan dengan suasana yang humoris, dan ceria. Oleh karena itu, tarian ini dapat menghibur para penonton yang menyaksikannya. Bahkan, tak jarang dari penonton tertawa ketika melihat pertunjukan tarian jaipong ini. Mereka yang tertawa tersebut karena dirinya merasa terbawa suasana ketika menyaksikan. Tarian unik berasal dari Jawa Barat ini sampai saat ini masih tetap dilestarikan, dan dipelajarinya. Jaipong adalah salah satu tarian Indonesia yang dikenal oleh masyarakat. Tari Jaipong adalah jenis tari pergaulan tradisional yang sangat terkenal di Indonesia, terutama di daerah Jawa Barat. Hal tersebut disampaikan dalam laman situs Warisan Budaya Takbeda Indonesia. Tarian ini memiliki sejarahnya tersendiri. Tari Jaipong sebenarnya merupakan hasil pengembangan dari tari tradisional. Pada mulanya, tarian Jaipong lahir berkat tokoh-tokoh seniman Jawa Barat. Sebelum membahas sejarahnya lebih lanjut, simak pengertian tari Jaipong berikut ini terlebidownload.jpegh dahulu.</p>
+			<p><b></b> Seperti yang telah disampaikan sebelumnya, tarian Jaipong adalah tarian khas dari wilayah Jawa Barat. Menurut buku berjudul Mengenal Seni Tari Indonesia yang ditulis oleh Muryanto, tari Jaipong telah dikenal masyarakat sejak 1976. Tari Jaipong memiliki makna yang mendalam pada setiap gerakannya, mulai dari gerakan cingeus, kaki, meliuk, ngagaleong, hingga variasi. Lebih lanjut, berikut beberapa makna dari masing-masing gerakan pada tarian Jaipong. Tari jaipong merupakan jenis tari pergaulan tradisional yang sangat terkenal pada jamannya di Indonesia terutama di daerah bagian Jawa Barat. Tari jaipong merupakan salah satu identitas kesenian Jawa Barat. Tari ini sering dipentaskan saat acara penting, seperti penyambutan tamu dari negara asing yang mengunjungi Jawa Barat bahkan untuk misi-misi kesenian ke luar negeri. </p>
+		</div>
+		<div id="footer">
+			<p>&copy; CopyRight 2023 - Siti Mawar Ardni - 12011700468 - 01SIFP009</p>
+		</div>
+		

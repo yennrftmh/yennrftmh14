@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: green;
+		}
+		#container{
+			width: 900px;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			height: auto;
+			margin: auto;
+		}
+		#header{
+			height: 300px;
+			background-color: grey;
+			background-image: url("download.png");
+			background-size: 100% 100%;
+			padding-bottom: 30px;
+		}
+		.nav{
+			background-color: #4682B4;
+		}
+		.nav ul li {
+			display: inline-block;
+			font: bold 15px sans-serif;
+			padding: 10px 0px 10px 25px;
+		}
+		.nav a{
+			text-decoration: none;
+			color: #E0FFFF;
+		}
+		#content{
+			height: 650px;
+			width:100%;
+			background-color: burlywood;
+			float: left;
+		}
+		#content p{
+			font-size: 17px;
+			text-align: justify;
+			padding: 4px 12px 4px 12px;
+		}
+		#content img{
+			float: left;
+			margin-right: 20px;
+			margin-left: 15px;
+			margin-top: 20px;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		#content .gambarkiri{
+			float: left;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		#footer{
+			height: 90px;
+			background-color: #000;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+		#nav{
+			height: 50px;
+			background-color: #000;
+			font-size: 19px;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="nav">
+			   <a href="indexmawar2.html">Home</a>  
+			   <a href="gallerymawar2.html">Gallery</a>
+			   <a href="aboutusmawar.html">About Us</a>  
+			   <a href="contactusmawar2.html">Contact Us</a>
+			</ul>
+		<script>
+		var waktu = new Date();
+		var jam = waktu.getHours();
+		var tgl = waktu.getDate();
+		var bln = waktu.getMonth();
+		var thn = waktu.getFullYear();
+		var hr = waktu.getDay();
+
+		var bulan = ["jan","Feb","Mret","Apr","Mei","jun","jul","Agst","Sep","Okt","Nov","Desember"];
+		var hari = ["Minggu","Senin","Selasa","Rabu"];
+		// bulan(11);
+
+		if (jam<=10) {
+			document.write("Hai Selamat Pagia");
+		} else if (jam<=14) {
+			document.write("Hai Selamat Siang");
+		} else if (jam<=17) {
+			document.write("Hai Selamat Sore");
+		} else {
+			document.write("Hai Selamat Malam")
+		}
+		document.write(hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+"<br>");
+	</script>
+
+		</div>
+		<div id="content">
+			<h2><b>SENI TARI TRADISIONAL</b></h2><hr>
+			<img src="download.jpeg">
+			<p><b>Tari Jaipong</b> Indonesia memang mempunyai banyak sekali jenis tarian tradisional. Semuanya itu tersebar ke seluruh penjuru Indonesia. Mulai dari Sabang hingga Merauke mempunyai tarian tradisionalnya masing-masing. Salah satu tarian tradisional di Indonesia ini yaitu Tari Jaipong. Tarian ini, merupakan jenis tarian yang berasal dari Jawa Barat. Awalnya, tarian jaipong ini berkembang di daerah Bandung, dan Karawang. ai tarian yang memiliki gerakan-gerakan yang unik, energik, dan sederhana. Tak hanya energik saja, tarian jaipong juga dimainkan dengan suasana yang humoris, dan ceria. Oleh karena itu, tarian ini dapat menghibur para penonton yang menyaksikannya. Bahkan, tak jarang dari penonton tertawa ketika melihat pertunjukan tarian jaipong ini. Mereka yang tertawa tersebut karena dirinya merasa terbawa suasana ketika menyaksikan. Tarian unik berasal dari Jawa Barat ini sampai saat ini masih tetap dilestarikan, dan dipelajarinya.</p>
+			<p><b></b> Tari jaipong adalah sebuah tari daerah yang berasal dari Karawang, Jawa Barat yang berkembang pada tahun 60-an. Mulanya tari jaipong dikenal dengan sebutan tari Banjet, sebuah pertunjukan seni tari yang yang dipentaskan dengan gerakan tari yang diiringi oleh musik dengan instrumen gamelan sebagai pengiringnya. Tari ini dahulu dijadikan sebagai hiburan rakyat, tari jaipong merupakan sebuah inovasi yang dilakukan oleh seorang seniman asal Karawang, tari ini merupakan gabungan dari pencak silat, wayang golek, topeng banjet, ketuk tilu, tarling, dan tepak topeng. Tari jaipong adalah sebuah tari daerah yang berasal dari Karawang, Jawa Barat yang berkembang pada tahun 60-an. Mulanya tari jaipong dikenal dengan sebutan tari Banjet, sebuah pertunjukan seni tari yang yang dipentaskan dengan gerakan tari yang diiringi oleh musik dengan instrumen gamelan sebagai pengiringnya. Gerakan yang ada pada tarian Jaipong merupakan gabungan dari sejumlah kesenian tradisional, seperti pencak silat, ketuk tilu, dan wayang golek. Oleh sebab itu, tarian ini dianggap sebagai tarian yang memiliki gerakan-gerakan unik, energik, dan sederhana. Di samping energik, tarian ini juga dimainkan dengan suasana yang menyenangkan sehingga tak jarang penonton merasa terhibur ketika menyaksikan tarian Jaipong.</p>
+		</div>
+		<div id="footer">
+			<p>&copy; CopyRight 2023 - Siti Mawar Ardini - 231011700468 - 01SIFP009</p>
+		</div>
+	</p>
+</div>
+</body>
+</html>
+
